@@ -1,0 +1,78 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+!Makefile*
+!*/
+
+*/build*/
+
+# vim
+*.swp
+*.swo
+
+# python
+*.pyc
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
+# Mac OS X
+.DS_Store
+
+*.log
+
+# http://www.gnu.org/software/automake
+
+Makefile.in
+.deps/
+
+# http://www.gnu.org/software/autoconf
+
+/autom4te.cache
+*/autom4te.cache
+/aclocal.m4
+/compile
+/configure
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+
+# cmake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
