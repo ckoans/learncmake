@@ -1,0 +1,1 @@
+double timesTwo(double number);
