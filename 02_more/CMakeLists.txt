@@ -6,11 +6,15 @@ set (Tutorial_VERSION_MAJOR 1)
 set (Tutorial_VERSION_MINOR 0)
 
 # Configure header file
+# TutorialConfig.h gets generated
+# taking declarations from TutorialConfig.h.in
 configure_file (
     "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
     "${PROJECT_BINARY_DIR}/TutorialConfig.h"
     )
 
+# our binary directory is also the directory that contains TutorialConfig.h
+# which we need to include
 include_directories("${PROJECT_BINARY_DIR}")
 
 add_executable(Tutorial tutorial.cpp)
